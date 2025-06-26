@@ -3,7 +3,7 @@
 
   <HeaderStakeDropdown />
 
-  <HeaderMoreDropdown />
+  <!-- <HeaderMoreDropdown /> -->
 
   <HeaderLink to="MyPositions">My Positions</HeaderLink>
 </template>

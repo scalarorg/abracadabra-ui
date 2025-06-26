@@ -27,17 +27,18 @@ export const FANTOM_CHAIN_ID = 250;
 export const MOONRIVER_CHAIN_ID = 1285;
 export const POLIGON_CHAIN_ID = 137;
 export const NIBIRU_CHAIN_ID = 6900;
+export const SEPOLIA_CHAIN_ID = 11155111;
 
 export const MAX_ALLOWANCE_VALUE: any =
   "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 
 export const COINGECKO_URL: string = "https://api.coingecko.com/api/v3/";
-export const ANALYTICS_URK: string = "https://analytics.abracadabra.money/api";
+export const ANALYTICS_URK: string = "https://analytics.stablecoin.scalar.org/api";
 export const OPENOCEAN_BASE_URL: string = "https://ethapi.openocean.finance/v2";
 
 export const GNOSIS_SAFE_ADDRESS = "0xDF2C270f610Dc35d8fFDA5B453E74db5471E126B";
 
-export const APR_KEY = "abracadabraCauldronsApr";
+export const APR_KEY = "scalarCauldronsApr";
 export const ETHER_DECIMALS = 18;
 export const ELIXIR_POTIONS_URL =
   "https://api.0xdreamy.dev/functions/v1/elixir-potions/users";

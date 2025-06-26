@@ -29,7 +29,7 @@ export default {
 
     linkText() {
       if (this.isClassicHeader) return "Swap";
-      return "MIM";
+      return "sUSD";
     },
   },
 

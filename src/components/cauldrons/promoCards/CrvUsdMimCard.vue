@@ -8,7 +8,7 @@
     <p class="primary paragraph">
       <span class="card-title">NEW Pool</span>
       <span class="subtitle">On Curve finance</span>
-      <span class="token-pair">crvUSD / MIM</span>
+      <span class="token-pair">crvUSD / sUSD</span>
     </p>
     <ul class="secondary paragraph" v-if="tvl && apr">
       <li>

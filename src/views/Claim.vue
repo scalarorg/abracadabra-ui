@@ -238,7 +238,7 @@ export default {
             networkImg: this.$image("assets/images/networks/ethereum-icon.svg"),
           },
           {
-            name: "MIM",
+            name: "sUSD",
             img: this.$image("assets/images/tokens/MIM.png"),
             balance: this.mimBalance,
             balanceUsd: this.mimBalance * this.mimBalanceUsd,
@@ -259,7 +259,7 @@ export default {
             networkImg: this.$image("assets/images/networks/arbitrum-icon.svg"),
           },
           {
-            name: "MIM",
+            name: "sUSD",
             img: this.$image("assets/images/tokens/MIM.png"),
             balance: this.mimBalance,
             balanceUsd: this.mimBalance * this.mimBalanceUsd,

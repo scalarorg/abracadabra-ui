@@ -2,7 +2,7 @@ import { useImage } from "@/helpers/useImage";
 
 export const blastTokens = [
   {
-    name: "MIM",
+    name: "sUSD",
     chainId: 81457,
     address: "0x76DA31D7C9CbEAE102aff34D3398bC450c8374c1",
     icon: useImage("assets/images/tokens/MIM.png"),

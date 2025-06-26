@@ -23,7 +23,7 @@
         </li>
 
         <li class="boost-way">
-          <span class="title">Deposit MIM</span>
+          <span class="title">Deposit sUSD</span>
           <span class="value">1X Points</span>
         </li>
 
@@ -33,13 +33,13 @@
         </li>
 
         <li class="boost-way">
-          <span class="title">Lock your MIM & USDb to get Boost</span>
+          <span class="title">Lock your sUSD & USDb to get Boost</span>
           <span class="value">20X Points </span>
         </li>
 
         <li class="boost-way">
           <span class="title">
-            Mint MIM from WETH Cauldron on Blast and deposit it
+            Mint sUSD from WETH Cauldron on Blast and deposit it
           </span>
           <span class="value">15X Points</span>
         </li>

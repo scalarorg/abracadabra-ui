@@ -14,6 +14,8 @@ import PrivilegedCauldronV4 from "@/abis/borrowPoolsAbi/PrivilegedCauldronV4";
 import GmxV2CauldronV4 from "@/abis/borrowPoolsAbi/GmxV2CauldronV4";
 import PrivilegedCheckpointCauldronV4 from "@/abis/borrowPoolsAbi/PrivilegedCheckpointCauldronV4";
 
+import ScalarCauldronV4 from "@/abis/borrowPoolsAbi/ScalarCauldronV4";
+
 export default {
   CauldronLowRiskV1,
   CauldronMediumRiskV1,
@@ -30,4 +32,5 @@ export default {
   PrivilegedCauldronV4,
   GmxV2CauldronV4,
   PrivilegedCheckpointCauldronV4,
+  ScalarCauldronV4,
 };

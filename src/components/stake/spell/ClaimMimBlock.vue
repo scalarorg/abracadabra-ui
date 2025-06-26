@@ -7,10 +7,10 @@
         <img
           class="token-icon"
           src="@/assets/images/tokens/MIM.png"
-          alt="MIM icon"
+          alt="sUSD icon"
         />
         <div>
-          <h4 class="token-name">MIM</h4>
+          <h4 class="token-name">sUSD</h4>
           <p class="token-amount">{{ formatAmount }}</p>
         </div>
       </div>

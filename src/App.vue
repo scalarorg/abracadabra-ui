@@ -4,12 +4,12 @@
     <img
       class="mim-top-bg"
       src="@/assets/images/main-mim-top-bg.png"
-      alt="Mim"
+      alt="sUSD"
     />
     <img
       class="mim-bottom-bg"
       src="@/assets/images/main-mim-bottom-bg.png"
-      alt="Mim"
+      alt="sUSD"
     />
     <MlpMigrationBanner />
     <router-view v-slot="{ Component, route }">
@@ -26,7 +26,7 @@
   </div>
   <NotificationContainer />
   <PopupsWrapper />
-  <Banner />
+  <!-- <Banner /> -->
   <SkullBanner />
   <OldAllowanceBanner />
   <TenderlyMod />
@@ -50,7 +50,7 @@ export default {
   async beforeCreate() {
     const isRestricted = await checkLocation();
     if (isRestricted) {
-      document.location.href = "https://abracadabra.money/location";
+      document.location.href = "https://stablecoin.scalar.org/location";
     }
   },
 

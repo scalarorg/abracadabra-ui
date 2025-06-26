@@ -15,7 +15,7 @@ describe("CrvUsdMimCard", () => {
 
     expect(wrapper.find(".card-title").text()).toBe("NEW Pool");
     expect(wrapper.find(".subtitle").text()).toBe("On Curve finance");
-    expect(wrapper.find(".token-pair").text()).toBe("crvUSD / MIM");
+    expect(wrapper.find(".token-pair").text()).toBe("crvUSD / sUSD");
     expect(wrapper.find(".value").text()).toBe("$1M");
   });
 });

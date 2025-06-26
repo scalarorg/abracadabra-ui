@@ -1,6 +1,6 @@
 {
-  "name": "abracadabra.money",
-  "short_name": "abracadabra",
+  "name": "scalar.money",
+  "short_name": "Scalar",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

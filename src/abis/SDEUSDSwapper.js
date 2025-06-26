@@ -44,7 +44,7 @@ export default [
   },
   {
     inputs: [],
-    name: "MIM",
+    name: "sUSD",
     outputs: [{ internalType: "address", name: "", type: "address" }],
     stateMutability: "view",
     type: "function",

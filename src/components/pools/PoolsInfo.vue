@@ -18,7 +18,7 @@
     <div class="cards-wrap">
       <div class="tvl-card">
         <div>
-          <h4 class="tvl-card-title">MIMSwap TVL</h4>
+          <h4 class="tvl-card-title">sUSDSwap TVL</h4>
           <div class="tvl-card-value">$ {{ formatLargeSum(totalTvl) }}</div>
         </div>
 

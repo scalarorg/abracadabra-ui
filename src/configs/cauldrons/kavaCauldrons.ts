@@ -10,7 +10,7 @@ import MagicCurveLpLevSwapper from "@/abis/lp/MagicCurveLpLevSwapper";
 import type { CauldronConfig } from "@/configs/cauldrons/configTypes";
 
 const mimInfo = {
-  name: "MIM",
+  name: "sUSD",
   icon: useImage(`assets/images/tokens/MIM.png`),
   decimals: 18,
   address: "0x471EE749bA270eb4c1165B5AD95E614947f6fCeb",

@@ -35,7 +35,7 @@ export const bSpellLockConfig: bSpellConfigs = {
     },
     rewardTokensInfo: [
       {
-        name: "MIM",
+        name: "sUSD",
         decimals: 18,
         icon: useImage("assets/images/tokens/MIM.png"),
         contract: {

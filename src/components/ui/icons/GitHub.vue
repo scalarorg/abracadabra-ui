@@ -2,7 +2,7 @@
   <a
     target="_blank"
     rel="noreferrer noopener"
-    href="https://github.com/Abracadabra-money"
+    href="https://github.com/scalarorg"
     class="list-link"
   >
     <svg

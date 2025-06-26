@@ -12,7 +12,7 @@ export default [
   },
   {
     inputs: [],
-    name: "MIM",
+    name: "sUSD",
     outputs: [{ internalType: "contract IERC20", name: "", type: "address" }],
     stateMutability: "view",
     type: "function",

@@ -178,7 +178,7 @@ const getTokenInfo = async (tokenType: number, fromChainConfig: any) => {
     tokenConfig!.image = useImage("assets/images/tokens/MIM.png");
   }
 
-  const activeTokenSymbol = tokenType === 0 ? "mim" : "spell";
+  const activeTokenSymbol = tokenType === 0 ? "sUSD" : "spell";
 
   const tokenPrice = await getTokenPriceByChain(
     tokensChainLink[activeTokenSymbol].chainId,

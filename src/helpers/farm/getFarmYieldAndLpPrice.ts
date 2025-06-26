@@ -22,12 +22,12 @@ export const getFarmYieldAndLpPrice = async (
   try {
     if (farmInfo.depositedBalance) {
       const tokenAddress =
-        farmInfo.depositedBalance.token0.name === "MIM"
+        farmInfo.depositedBalance.token0.name === "sUSD"
           ? MIMAddress
           : SPELLAddress;
 
       const tokenPrice =
-        farmInfo.depositedBalance.token0.name === "MIM" ? mimPrice : spellPrice;
+        farmInfo.depositedBalance.token0.name === "sUSD" ? mimPrice : spellPrice;
 
       const lpYieldAndPrice: any = await getLPYieldAndPrice(
         stakingTokenContractInfo,

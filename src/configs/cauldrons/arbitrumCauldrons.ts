@@ -14,7 +14,7 @@ import gmLevSwapperAbi from "@/abis/gmLevSwapper";
 import gmLiqSwapper from "@/abis/gmLiqSwapper";
 
 const mimInfo = {
-  name: "MIM",
+  name: "sUSD",
   icon: useImage(`assets/images/tokens/MIM.png`),
   decimals: 18,
   address: "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A",
@@ -129,7 +129,7 @@ const config: Array<CauldronConfig> = [
       is0xSwap: true,
       isDegenBox: true,
       strategyLink:
-        "https://abracadabramoney.gitbook.io/learn/intro/stake/mglp",
+        "https://scalarmoney.gitbook.io/learn/intro/stake/mglp",
       isDepreciated: false,
       acceptUseDefaultBalance: false,
       healthMultiplier: 1,

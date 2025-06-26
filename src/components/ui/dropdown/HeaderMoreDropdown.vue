@@ -35,7 +35,7 @@
             />
             Beam
           </div>
-          <p class="link-description">Move your MIM across networks</p>
+          <p class="link-description">Move your sUSD across networks</p>
         </router-link>
 
         <a
@@ -53,7 +53,7 @@
         >
 
         <a
-          href="https://analytics.abracadabra.money"
+          href="https://analytics.stablecoin.scalar.org"
           class="list-link"
           target="_blank"
           ><div class="link-title">
@@ -67,7 +67,7 @@
         >
 
         <a
-          href="https://docs.abracadabra.money/learn/"
+          href="https://docs.stablecoin.scalar.org/learn/"
           class="list-link"
           target="_blank"
           ><div class="link-title">

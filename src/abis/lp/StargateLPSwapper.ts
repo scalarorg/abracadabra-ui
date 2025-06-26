@@ -43,7 +43,7 @@ export default [
     type: "function",
     stateMutability: "view",
     outputs: [{ type: "address", name: "", internalType: "contract IERC20" }],
-    name: "mim",
+    name: "sUSD",
     inputs: [],
   },
   {

@@ -80,7 +80,7 @@ export const magicGlpConfig: MagicGlpConfigs = {
         icon: useImage("assets/images/tokens/ETH2.png"),
       },
       leverageInfo: {
-        label: "Amplify your yield with the Abracadabra Leverage Engine",
+        label: "Amplify your yield with the Scalar Leverage Engine",
         id: 3,
       },
       timestampProp: "id",
@@ -125,7 +125,7 @@ export const magicGlpConfig: MagicGlpConfigs = {
   //       icon: useImage("assets/images/tokens/AVAX.png"),
   //     },
   //     leverageInfo: {
-  //       label: "Abracadabra Leverage Engine is being developed, stay tuned!",
+  //       label: "Scalar Leverage Engine is being developed, stay tuned!",
   //     },
   //     timestampProp: "timestamp",
   //     isAvaxChain: true,

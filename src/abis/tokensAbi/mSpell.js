@@ -126,7 +126,7 @@ export default [
   },
   {
     inputs: [],
-    name: "mim",
+    name: "sUSD",
     outputs: [{ internalType: "contract ERC20", name: "", type: "address" }],
     stateMutability: "view",
     type: "function",

@@ -8,7 +8,7 @@ const blastTokens: Array<PoolCreationTokenConfig> = [
     chainId: BLAST_CHAIN_ID,
     address: "0x76DA31D7C9CbEAE102aff34D3398bC450c8374c1",
     name: "Magic Internet Money",
-    symbol: "MIM",
+    symbol: "sUSD",
     icon: useImage(`assets/images/tokens/MIM.png`),
     decimals: 18,
     abi: erc20Abi,

@@ -15,7 +15,7 @@ describe("CamelotCard", () => {
 
     expect(wrapper.find(".card-title").text()).toBe("NEW V3 POOL");
     expect(wrapper.find(".on-camelot").text()).toBe("ON CAMELOT");
-    expect(wrapper.find(".token-pair").text()).toBe("ARB / MIM");
+    expect(wrapper.find(".token-pair").text()).toBe("ARB / uUSD");
 
     expect(wrapper.findAll(".value")[0].text()).toContain("$10");
     expect(wrapper.findAll(".value")[1].text()).toContain("20");

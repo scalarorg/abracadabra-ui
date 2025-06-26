@@ -63,7 +63,7 @@
           rel="noopener noreferrer"
           >Learn more</a
         >
-        <span>about MIM being an Omnichain Fungible Tokens</span>
+        <span>about sUSD being an Omnichain Fungible Tokens</span>
       </p>
     </div>
   </div>
