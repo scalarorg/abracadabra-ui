@@ -16,7 +16,7 @@
       </div>
 
       <p class="description">
-        <span class="desc-line"> Withdraw your MIM from {{ title }} on </span>
+        <span class="desc-line"> Withdraw your sUSD from {{ title }} on </span>
         <span class="desc-line">
           <img :src="getChainIcon(infoObject.chainId)" class="mim-symbol" />
           {{ chainInfo?.chainName }} Network
@@ -25,7 +25,7 @@
 
       <BaseTokenInput
         class="withdraw-input"
-        name="MIM"
+        name="uUSD"
         :icon="mimIcon"
         :decimals="18"
         :value="inputValue"

@@ -10,7 +10,7 @@
     </div>
 
     <div class="farm-cards-wrap">
-      <h4 class="farm-title">Explore the Abracadabra ecosystem on Arbitrum!</h4>
+      <h4 class="farm-title">Explore the Scalar ecosystem on Arbitrum!</h4>
 
       <FarmItem v-if="farmCardInfo" :farm="farmCardInfo" :top="true" />
     </div>

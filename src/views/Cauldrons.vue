@@ -11,15 +11,15 @@
             <img
               class="mim-icon"
               src="@/assets/images/PixelMIM.svg"
-              alt="Mim icon"
+              alt="sUSD icon"
             />
-            MIM a leading decentralised and collateral-backed stablecoin.
+            sUSD a leading decentralised and collateral-backed stablecoin.
           </h4>
         </div>
 
         <!-- <ArbitrumBlock /> -->
 
-        <CauldronsCarousel />
+        <!-- <CauldronsCarousel /> -->
 
         <CauldronsTable
           :cauldrons="cauldrons"
@@ -83,13 +83,13 @@ export default {
           isSortingCriterion: true,
         },
         {
-          tableKey: "TMB",
-          tooltip: "Total MIM Borrowed.",
+          tableKey: "Borrowed",
+          tooltip: "Total sUSD Borrowed.",
           isSortingCriterion: true,
         },
         {
-          tableKey: "MIMS LB",
-          tooltip: "MIMs left to be Borrowed.",
+          tableKey: "Left",
+          tooltip: "sUSDs left to be Borrowed.",
           isSortingCriterion: true,
         },
         {

@@ -22,7 +22,7 @@
               class="link-icon swap-icon"
               src="@/assets/images/header/dropdown/more/mim-swap-icon.png"
             />
-            MIMSwap
+            sUSDSwap
           </div>
           <p class="link-description">Swap assets</p>
         </router-link>
@@ -50,7 +50,7 @@
         </router-link>
 
         <a
-          href="https://analytics.abracadabra.money"
+          href="https://analytics.stablecoin.scalar.org"
           class="list-link"
           target="_blank"
           ><div class="link-title">
@@ -63,8 +63,8 @@
           <p class="link-description">Explore analytics</p></a
         >
 
-        <a
-          href="https://docs.abracadabra.money/learn/"
+        <!-- <a
+          href="https://docs.stablecoin.scalar.org/learn/"
           class="list-link"
           target="_blank"
           ><div class="link-title">
@@ -75,7 +75,7 @@
             Documentation
           </div>
           <p class="link-description">Explore docs</p></a
-        >
+        > -->
 
         <div class="social-media">
           <Lens class="media-link" />

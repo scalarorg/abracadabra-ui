@@ -482,4 +482,4 @@ export default [
     ],
   },
   { type: "receive", stateMutability: "payable" },
-];
+] as const;

@@ -5,7 +5,7 @@
       <div class="bento-title-amount">
         <p class="bento-title">{{ title }}</p>
         <div class="bento-amount">
-          <BaseTokenIcon :icon="mimIcon" name="MIM" size="24px" />
+          <BaseTokenIcon :icon="mimIcon" name="sUSD" size="24px" />
           <p class="token-balance">{{ formatTokenBalance(parsedBalance) }}</p>
         </div>
       </div>
@@ -89,7 +89,7 @@ export default {
 
     link() {
       const params = this.isBento ? this.bentoLink : this.degenLink;
-      return `https://abracadabramoney.gitbook.io/${params}`;
+      return `https://scalarmoney.gitbook.io/${params}`;
     },
 
     parsedBalance() {

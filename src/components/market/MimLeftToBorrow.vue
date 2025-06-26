@@ -3,7 +3,7 @@
     <div ref="anim"></div>
     <div :class="['info', { 'bera-info': isBeraDesign }]">
       <div class="value">{{ mimLeftToBorrow }}</div>
-      <div class="title">MIM Left to Mint</div>
+      <div class="title">sUSD Left to Mint</div>
     </div>
     <div class="values-wrap">
       <span class="value-start">0</span>

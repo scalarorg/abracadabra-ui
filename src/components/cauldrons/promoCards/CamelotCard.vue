@@ -8,7 +8,7 @@
     <p class="primary paragraph">
       <span class="card-title">NEW V3 POOL</span>
       <span class="on-camelot">ON CAMELOT</span>
-      <span class="token-pair">ARB / MIM</span>
+      <span class="token-pair">ARB / sUSD</span>
     </p>
     <ul class="secondary paragraph" v-if="tvl && aprRange">
       <li>

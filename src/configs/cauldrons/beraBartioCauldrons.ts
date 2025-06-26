@@ -5,7 +5,7 @@ import degenBoxERC4626Wrapper from "@/abis/lp/DegenBoxERC4626Wrapper";
 import type { CauldronConfig } from "@/configs/cauldrons/configTypes";
 
 const mimInfo = {
-  name: "MIM",
+  name: "sUSD",
   icon: useImage(`assets/images/tokens/MIM.png`),
   decimals: 18,
   address: "0x08B918dD18E087893bb9d711d9E0BBaA7a63Ef63",

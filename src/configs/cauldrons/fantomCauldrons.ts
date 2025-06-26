@@ -8,7 +8,7 @@ import { useImage } from "@/helpers/useImage";
 import type { CauldronConfig } from "@/configs/cauldrons/configTypes";
 
 const mimInfo = {
-  name: "MIM",
+  name: "sUSD",
   icon: useImage(`assets/images/tokens/MIM.png`),
   decimals: 18,
   address: "0x82f0B8B456c1A451378467398982d4834b6829c1",
@@ -197,7 +197,7 @@ const config: Array<CauldronConfig> = [
       isSwappersActive: true,
       isDegenBox: true,
       strategyLink:
-        "https://abracadabramoney.medium.com/our-spiritswap-lp-degenbox-strategy-11c1a786ff67",
+        "https://scalarmoney.medium.com/our-spiritswap-lp-degenbox-strategy-11c1a786ff67",
       isDepreciated: true,
       acceptUseDefaultBalance: false,
       healthMultiplier: 1,

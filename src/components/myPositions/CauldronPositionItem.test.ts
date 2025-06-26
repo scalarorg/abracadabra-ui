@@ -20,7 +20,7 @@ describe("CauldronPositionItem", () => {
     //           name: "Collateral Info",
     //         },
     //         mimInfo: {
-    //           name: "MIM",
+    //           name: "sUSD",
     //         },
     //       },
     //       apr: 0.05,
@@ -51,14 +51,14 @@ describe("CauldronPositionItem", () => {
   //           id: 2,
   //           wrapInfo: {
   //             unwrappedToken: {
-  //               name: "MIM",
+  //               name: "sUSD",
   //             },
   //           },
   //           collateralInfo: {
   //             name: "CollateralName",
   //           },
   //           mimInfo: {
-  //             name: "MIM",
+  //             name: "sUSD",
   //           },
   //         },
   //         apr: 0.05,
@@ -76,7 +76,7 @@ describe("CauldronPositionItem", () => {
   //   });
 
   //   const tokenName = wrapper.find(".token-name");
-  //   expect(tokenName.text()).toBe("MIM");
+  //   expect(tokenName.text()).toBe("sUSD");
   // });
 
   // it("displays the correct collateral symbol for other tokens", () => {
@@ -95,7 +95,7 @@ describe("CauldronPositionItem", () => {
   //             name: "Collateral Info",
   //           },
   //           mimInfo: {
-  //             name: "MIM",
+  //             name: "sUSD",
   //           },
   //         },
   //         apr: 0.05,
@@ -132,7 +132,7 @@ describe("CauldronPositionItem", () => {
   //             name: "Collateral Info",
   //           },
   //           mimInfo: {
-  //             name: "MIM",
+  //             name: "sUSD",
   //           },
   //         },
   //         apr: 10,
@@ -169,7 +169,7 @@ describe("CauldronPositionItem", () => {
   //             name: "Collateral Info",
   //           },
   //           mimInfo: {
-  //             name: "MIM",
+  //             name: "sUSD",
   //           },
   //         },
   //         apr: 0.05,
@@ -206,7 +206,7 @@ describe("CauldronPositionItem", () => {
   //             name: "Collateral Info",
   //           },
   //           mimInfo: {
-  //             name: "MIM",
+  //             name: "sUSD",
   //           },
   //         },
   //         apr: 0.05,
@@ -243,7 +243,7 @@ describe("CauldronPositionItem", () => {
   //             name: "Collateral Info",
   //           },
   //           mimInfo: {
-  //             name: "MIM",
+  //             name: "sUSD",
   //           },
   //         },
   //         apr: 0.05,

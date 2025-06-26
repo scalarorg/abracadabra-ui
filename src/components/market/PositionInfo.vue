@@ -33,33 +33,26 @@
       </p>
     </div>
 
-    <div :class="['position-info-item', { 'bera-item': isBeraDesign }]">
+    <div class="position-info-item">
       <img
         class="icon-right-center"
         src="@/assets/images/market/m-icon.svg"
         alt=""
       />
-      <img
-        v-if="isBeraDesign"
-        class="bera-repay"
-        src="@/assets/images/market/bera/repay-icon.png"
-        alt=""
-      />
-
       <h4 class="item-title">
-        MIM to Repay
+        SCL to Repay
         <TooltipIcon
           :width="20"
           :height="20"
           fill="#878B93"
-          tooltip="Amount of MIM minted from the cauldron."
+          tooltip="Amount of SCL minted from the cauldron."
         />
       </h4>
       <p class="item-value">
         <img
           class="token-icon"
           src="@/assets/images/tokens/MIM.png"
-          alt="Mim icon"
+          alt="sUSD icon"
         />
         {{ formatAmount(expectedPosition.mimAmount) }}
       </p>
@@ -82,14 +75,6 @@
         src="@/assets/images/market/m-icon.svg"
         alt=""
       />
-
-      <img
-        v-if="isBeraDesign"
-        class="bera-liquidation"
-        src="@/assets/images/market/bera/liquidation-icon.png"
-        alt=""
-      />
-
       <div class="position-health">
         {{ expectedPosition.positionHealth.status }}
       </div>
@@ -123,8 +108,9 @@
         />
       </h4>
       <p class="item-value">
-        <img class="token-icon" :src="cauldron.config.icon" alt="Mim icon" /> 1
-        = $ {{ formatAmount(collateralPrice, collateralDecimals) }}
+        <img class="token-icon" :src="cauldron.config.icon" alt="sUSD icon" /> 1
+        =
+        {{ formatAmount(collateralPrice, collateralDecimals) }}
       </p>
     </div>
   </div>
@@ -160,10 +146,6 @@ export default {
     },
   },
   computed: {
-    isBeraDesign() {
-      return !!this.cauldron.config.cauldronSettings?.isBeraDesign;
-    },
-
     collateralDecimals(): number {
       return this.cauldron.config.collateralInfo.decimals;
     },
@@ -207,7 +189,7 @@ export default {
   max-width: 410px;
   padding: 24px;
   width: 100%;
-  // max-height: 577px;
+  max-height: 577px;
   display: flex;
   gap: 16px;
   flex-direction: column;
@@ -251,10 +233,6 @@ export default {
   transition: all 0.3s ease;
 }
 
-.bera-item {
-  padding-left: 30px;
-}
-
 .liquidation-price {
   padding-top: 24px;
 }
@@ -274,21 +252,6 @@ export default {
   position: absolute;
   top: 65px;
   right: -21px;
-}
-
-.bera-repay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 114px;
-  height: 114px;
-}
-
-.bera-liquidation {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 90px;
 }
 
 .icon-right-top {
@@ -412,11 +375,6 @@ export default {
 
   .item-price {
     font-size: 16px;
-  }
-
-  .bera-liquidation,
-  .bera-repay {
-    z-index: -1;
   }
 }
 </style>

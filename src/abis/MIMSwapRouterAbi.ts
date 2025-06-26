@@ -452,4 +452,4 @@ export default [
     type: "function",
   },
   { stateMutability: "payable", type: "receive" },
-];
+] as const;

@@ -12,7 +12,7 @@ const tokensList: TokenInfo[] = [
       decimals: 18,
       icon: "MIM.png",
       isPopular: true,
-      name: "MIM",
+      name: "sUSD",
     },
     price: 0.980105,
     userInfo: {
@@ -29,7 +29,7 @@ const tokensList: TokenInfo[] = [
       decimals: 18,
       icon: "USDB.png",
       isPopular: true,
-      name: "MIM",
+      name: "sUSD",
     },
     price: 0.980105,
     userInfo: {

@@ -7,7 +7,7 @@
       <img
         class="mim-icon"
         src="@/assets/images/market/m-icon.svg"
-        alt="Mim icon"
+        alt="sUSD icon"
       />
       <span class="name">Pegged</span>
       <p class="description">
@@ -25,7 +25,7 @@
       <img
         class="mim-icon"
         src="@/assets/images/market/m-icon.svg"
-        alt="Mim icon"
+        alt="sUSD icon"
       />
       <span class="name">Standard</span>
       <p class="description">

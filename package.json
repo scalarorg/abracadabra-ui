@@ -1,5 +1,5 @@
 {
-  "name": "abracadabra.money",
+  "name": "scalar.money",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -46,7 +46,6 @@
     "marked": "^11.2.0",
     "moment": "^2.29.4",
     "veaury": "^2.3.12",
-    "viem": "^2.9.13",
     "vue": "^3.2.47",
     "vue-echarts": "^6.6.5",
     "vue-router": "^4.1.6",

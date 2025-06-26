@@ -21,7 +21,7 @@
             <img
               class="token-icon"
               src="@/assets/images/tokens/MIM.png"
-              alt="MIM"
+              alt="sUSD"
               v-if="index === 2"
             />
             {{ data.value }}

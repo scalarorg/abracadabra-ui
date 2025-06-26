@@ -1116,4 +1116,4 @@ export default [
     name: "withdrawProtocolFeeBalance",
     inputs: [{ type: "address", name: "_to", internalType: "address" }],
   },
-];
+] as const;

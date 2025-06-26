@@ -3,7 +3,7 @@
     <div class="swap-wrapper">
       <div class="swap-head">
         <h3 class="title">
-          MIM Swap
+          sUSD Swap
           <AvailableNetworksBlock
             :selectedNetwork="selectedNetwork"
             :availableNetworks="availableNetworks"
@@ -289,9 +289,9 @@ export default {
     isMIMToken() {
       return (
         (this.tokenType === "from" &&
-          this.actionConfig.fromToken.config.name === "MIM") ||
+          this.actionConfig.fromToken.config.name === "sUSD") ||
         (this.tokenType === "to" &&
-          this.actionConfig.toToken.config.name === "MIM")
+          this.actionConfig.toToken.config.name === "sUSD")
       );
     },
 
@@ -568,11 +568,11 @@ export default {
 
     selectBaseTokens() {
       this.actionConfig.fromToken = this.tokensList.find(
-        (token: TokenInfo) => token.config.name !== "MIM"
+        (token: TokenInfo) => token.config.name !== "sUSD"
       );
 
       this.actionConfig.toToken = this.tokensList.find(
-        (token: TokenInfo) => token.config.name === "MIM"
+        (token: TokenInfo) => token.config.name === "sUSD"
       );
     },
 

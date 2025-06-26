@@ -15,7 +15,7 @@ export const magicGlpConfig = {
       is0xSwap: true,
       isDegenBox: true,
       strategyLink:
-        "https://abracadabramoney.gitbook.io/learn/intro/stake/mglp",
+        "https://scalarmoney.gitbook.io/learn/intro/stake/mglp",
       isDepreciated: false,
       acceptUseDefaultBalance: false,
       healthMultiplier: 1,
@@ -36,7 +36,7 @@ export const magicGlpConfig = {
       abi: [],
     },
     mimInfo: {
-      name: "MIM",
+      name: "sUSD",
       icon: "http://127.0.0.1:5173/src/assets/images/tokens/MIM.png",
       decimals: 18,
       address: "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A",

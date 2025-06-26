@@ -4,8 +4,8 @@ import OFTWrapper from "@/abis/beam/OFTWrapper";
 import transparentUpgradeableProxy from "@/abis/beam/transparentUpgradeableProxy";
 
 export default {
-  LzProxyOFTV2,
-  LzIndirectOFTV2,
-  OFTWrapper,
-  transparentUpgradeableProxy,
+    LzProxyOFTV2,
+    LzIndirectOFTV2,
+    OFTWrapper,
+    transparentUpgradeableProxy,
 };

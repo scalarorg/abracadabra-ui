@@ -24,7 +24,7 @@ import type { CauldronConfig } from "@/configs/cauldrons/configTypes";
 import erc20Abi from "@/abis/farm/erc20Abi";
 
 const mimInfo = {
-  name: "MIM",
+  name: "sUSD",
   icon: useImage(`assets/images/tokens/MIM.png`),
   decimals: 18,
   address: "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3",
@@ -675,7 +675,7 @@ const config: Array<CauldronConfig> = [
       isSwappersActive: true,
       isDegenBox: true,
       strategyLink:
-        "https://medium.com/abracadabra-money/our-ust-strategy-the-first-application-of-the-magic-potentialities-of-degenbox-ea35f13d6b5e",
+        "https://medium.com/scalar-money/our-ust-strategy-the-first-application-of-the-magic-potentialities-of-degenbox-ea35f13d6b5e",
       isDepreciated: true,
       acceptUseDefaultBalance: false,
       healthMultiplier: 10,

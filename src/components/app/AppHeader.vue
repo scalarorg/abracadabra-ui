@@ -93,7 +93,7 @@ export default {
         account: {
           publicKey: this.account,
         },
-        tenantId: "abracadabra",
+        tenantId: "scalar",
         walletBlockchain: this.notifiWalletBlockchain,
         env: "Production",
       };
