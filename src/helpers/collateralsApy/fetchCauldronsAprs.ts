@@ -64,7 +64,7 @@ const getLSAprsAndCheckForExpiration = () => {
     if (!parsedLocalApr) return;
 
     const createdAt = parsedLocalApr.timestamp;
-    
+
     if (checkIfExpired(createdAt) || !createdAt) return;
 
     const aprs = parsedLocalApr.aprs;
@@ -83,15 +83,26 @@ const getLSAprsAndCheckForExpiration = () => {
 };
 
 const formatAprsAndSaveToLS = (aprs: any, cauldrons: CauldronListItem[]) => {
+  if (!cauldrons || cauldrons.length === 0) {
+    console.warn("[formatAprsAndSaveToLS] Cauldrons array is empty, skipping formatting");
+    return;
+  }
+
   const createdAt = new Date().getTime();
 
   const aprsFormattedForLS = Object.keys(aprs).reduce(
     (acc: any, address: any) => {
-      const { chainId } = cauldrons.find(
+      const cauldron = cauldrons.find(
         ({ config }) =>
           config.contract.address.toLowerCase() === address.toLowerCase()
-      )!.config;
+      );
 
+      if (!cauldron) {
+        console.warn(`[formatAprsAndSaveToLS] Cauldron not found for address: ${address}`);
+        return acc;
+      }
+
+      const { chainId } = cauldron.config;
       const apr = aprs[address];
 
       return {
@@ -149,9 +160,9 @@ const filterCrvCauldronsAndGetAprs = async (cauldrons: CauldronListItem[]) => {
 
         return crvCauldronApr
           ? {
-              [cauldron.config.contract.address.toLowerCase()]:
-                Number(crvCauldronApr),
-            }
+            [cauldron.config.contract.address.toLowerCase()]:
+              Number(crvCauldronApr),
+          }
           : undefined;
       })
     )
@@ -222,10 +233,10 @@ const getGmCauldronsAprs = async (
 
     return apr && cauldronContractAddress
       ? {
-          [cauldronContractAddress.toLowerCase()]: Number(
-            utils.formatUnits(apr, 2)
-          ),
-        }
+        [cauldronContractAddress.toLowerCase()]: Number(
+          utils.formatUnits(apr, 2)
+        ),
+      }
       : undefined;
   });
 };

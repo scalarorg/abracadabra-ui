@@ -18,7 +18,7 @@
         />
       </div>
 
-      <h4 class="subtitle">Chose the amount of MIM you want to repay</h4>
+      <h4 class="subtitle">Chose the amount of sUSD you want to repay</h4>
     </div>
 
     <BaseTokenInput

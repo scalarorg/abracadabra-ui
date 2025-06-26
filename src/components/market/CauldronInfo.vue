@@ -22,7 +22,7 @@
             :width="20"
             :height="20"
             fill="#878B93"
-            tooltip="Fee charged on the amount of MIM minted from the cauldron."
+            tooltip="Fee charged on the amount of sUSD minted from the cauldron."
           />
         </div>
         <div class="fees-percent">{{ cauldron.mainParams.borrowFee }}%</div>

@@ -197,7 +197,7 @@ const config: Array<CauldronConfig> = [
       isSwappersActive: true,
       isDegenBox: true,
       strategyLink:
-        "https://abracadabramoney.medium.com/our-spiritswap-lp-degenbox-strategy-11c1a786ff67",
+        "https://scalarmoney.medium.com/our-spiritswap-lp-degenbox-strategy-11c1a786ff67",
       isDepreciated: true,
       acceptUseDefaultBalance: false,
       healthMultiplier: 1,

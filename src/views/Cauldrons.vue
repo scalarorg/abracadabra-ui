@@ -11,15 +11,15 @@
             <img
               class="mim-icon"
               src="@/assets/images/PixelMIM.svg"
-              alt="Mim icon"
+              alt="sUSD icon"
             />
-            MIM a leading decentralised and collateral-backed stablecoin.
+            sUSD a leading decentralised and collateral-backed stablecoin.
           </h4>
         </div>
 
         <!-- <ArbitrumBlock /> -->
 
-        <CauldronsCarousel />
+        <!-- <CauldronsCarousel /> -->
 
         <CauldronsTable
           :cauldrons="cauldrons"

@@ -20,11 +20,11 @@
           />
         </div>
       </div>
-      <span class="token-pair">MIM / USDC Pool</span>
+      <span class="token-pair">sUSD / USDC Pool</span>
     </div>
 
     <p class="promo-text">
-      Stake now on <SwapLogoIcon :width="24" :height="20" /> MIMSwap
+      Stake now on <SwapLogoIcon :width="24" :height="20" /> sUSDSwap
     </p>
   </router-link>
 </template>

@@ -8,7 +8,7 @@
     <div class="notifi-card">
       <Context
         v-if="isOpenNotifiModal && !!account"
-        dappAddress="abracadabra"
+        dappAddress="scalar"
         env="Production"
         :walletPublicKey="account"
         :walletBlockchain="notifiWalletBlockchain"

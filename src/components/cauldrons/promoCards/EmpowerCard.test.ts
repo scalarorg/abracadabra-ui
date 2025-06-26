@@ -22,6 +22,6 @@ describe("EmpowerCard", () => {
 
     const description = wrapper.find(".description");
     expect(description.findAll(".text")[0].text()).toBe("Delegate Your ARB");
-    expect(description.findAll(".text")[1].text()).toBe("to Abracadabra DAO");
+    expect(description.findAll(".text")[1].text()).toBe("to Scalar DAO");
   });
 });

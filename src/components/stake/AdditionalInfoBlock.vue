@@ -4,7 +4,7 @@
       <img
         class="mim-icon"
         src="@/assets/images/market/m-icon.svg"
-        alt="Mim icon"
+        alt="sUSD icon"
       />
 
       <h4 class="title">

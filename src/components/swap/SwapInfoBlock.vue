@@ -68,7 +68,7 @@
 
           <div class="item-tooltip" v-if="showFeesTooltip">
             <p class="item-tooltip-text">
-              Fees are applied to ensure development of MIMSwap and
+              Fees are applied to ensure development of sUSDSwap and
               profitability for liquidity providers as well as network fee
             </p>
             <p class="item-tooltip-text">Gas cost: {{ formatUSD(gasCost) }}</p>

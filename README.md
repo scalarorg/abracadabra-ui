@@ -1,4 +1,4 @@
-# abracadabra.money
+# scalar.money
 
 ## Recommended IDE Setup
 

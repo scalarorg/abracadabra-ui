@@ -7,7 +7,7 @@ describe("Docs", () => {
     const wrapper = shallowMount(Docs);
     const link = wrapper.find("a");
     expect(link.attributes("href")).toBe(
-      "https://abracadabramoney.gitbook.io/abracadabra-money-wiki/"
+      "https://scalarmoney.gitbook.io/scalar-money-wiki/"
     );
   });
 

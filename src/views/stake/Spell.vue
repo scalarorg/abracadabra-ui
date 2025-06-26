@@ -398,8 +398,8 @@ export default {
         {
           text: `Make SPELL work for you! Stake your SPELL into mSPELL! No impermanent
         loss, no loss of governance rights. Take part in the fee sharing
-        mechanism of Abracadabra and earn MIM! Find out more`,
-          link: "https://docs.abracadabra.money/learn/intro/stake/mspell",
+        mechanism of Scalar and earn MIM! Find out more`,
+          link: "https://docs.stablecoin.scalar.org/learn/intro/stake/mspell",
           subText: `mSPELL automatically earns fees from MIM repayments from all wizards
         proportional to your share of the stake pool.`,
         },

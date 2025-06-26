@@ -8,7 +8,7 @@
     <p class="primary paragraph">
       <span class="card-title">Stable V3 Pool</span>
       <span class="on-camelot">ON CAMELOT</span>
-      <span class="token-pair">USDC / MIM</span>
+      <span class="token-pair">USDC / sUSD</span>
     </p>
 
     <ul class="secondary paragraph" v-if="tvl && aprRange">

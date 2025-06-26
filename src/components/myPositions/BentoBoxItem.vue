@@ -89,7 +89,7 @@ export default {
 
     link() {
       const params = this.isBento ? this.bentoLink : this.degenLink;
-      return `https://abracadabramoney.gitbook.io/${params}`;
+      return `https://scalarmoney.gitbook.io/${params}`;
     },
 
     parsedBalance() {

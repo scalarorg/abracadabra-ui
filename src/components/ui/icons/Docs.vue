@@ -1,6 +1,6 @@
 <template>
   <a
-    href="https://abracadabramoney.gitbook.io/abracadabra-money-wiki/"
+    href="https://scalarmoney.gitbook.io/scalar-money-wiki/"
     target="_blank"
     rel="noreferrer noopener"
     class="list-link"

@@ -44,19 +44,19 @@
         </MobileHeaderLink>
       </li>
 
-      <li @click="$emit('close-popup')">
-        <MobileHeaderLink href="https://analytics.abracadabra.money/">
+      <!-- <li @click="$emit('close-popup')">
+        <MobileHeaderLink href="https://analytics.stablecoin.scalar.org/">
           <img src="@/assets/images/header/dropdown/more/bars-icon.svg" />
           Analytics
         </MobileHeaderLink>
       </li>
 
       <li @click="$emit('close-popup')">
-        <MobileHeaderLink href="https://docs.abracadabra.money/learn/">
+        <MobileHeaderLink href="https://docs.stablecoin.scalar.org/learn/">
           <img src="@/assets/images/header/dropdown/more/docs-icon.svg" />
           Documentation
         </MobileHeaderLink>
-      </li>
+      </li> -->
     </ul>
   </nav>
 </template>

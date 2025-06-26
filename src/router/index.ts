@@ -109,7 +109,7 @@ const routes: Array<RouteRecordRaw> = [
   //   component: () => import("@/views/pool/PoolCreation.vue"),
   // },
   {
-    path: "/mim-swap",
+    path: "/susd-swap",
     name: "MimSwap",
     component: () => import("@/views/MimSwap.vue"),
   },
