@@ -76,6 +76,7 @@ export const getMaxLeverageMultiplierAlternative = (
   depositAmount: BigNumber = BigNumber.from(0),
   slippage: BigNumber = expandDecimals(1, 2),
 ) => {
+  console.log({ mainParams })
   const { mcr } = config;
   const { oracleExchangeRate } = mainParams;
   const { decimals } = config.collateralInfo;
@@ -92,6 +93,10 @@ export const getMaxLeverageMultiplierAlternative = (
   const testCollateral = positionExpectedCollateral.gt(0)
     ? positionExpectedCollateral
     : utils.parseUnits("10", decimals);
+
+  console.log({
+    oracleExchangeRate
+  })
 
   const collateralPrice = expandDecimals(1, 18 + decimals).div(
     oracleExchangeRate

@@ -111,11 +111,11 @@ export const getUserPositions = async (
     // EDGE CASE: if cauldron is empty
     const userPosition = userPositions[index * 4].error
       ? {
-          borrowValue: 0n,
-          collateral: {
-            amount: userCollateralShare,
-          },
-        }
+        borrowValue: 0n,
+        collateral: {
+          amount: userCollateralShare,
+        },
+      }
       : userPositions[index * 4].result;
 
     const collateralPrice =
@@ -124,7 +124,7 @@ export const getUserPositions = async (
     const liquidationPrice = Number(
       utils.formatUnits(
         getLiquidationPrice(
-          BigNumber.from(userPosition.borrowValue),
+          BigNumber.from(userPosition.borrow.amount),
           BigNumber.from(userPosition.collateral.amount).add(
             BigNumber.from(collaterallInOrders[index].amount)
           ),
@@ -134,9 +134,9 @@ export const getUserPositions = async (
       )
     );
     const bigintLiquidationPrice = getAlternativeLiquidationPrice(
-      userPosition.borrowValue,
+      userPosition.borrow.amount,
       userPosition.collateral.amount +
-        BigInt(collaterallInOrders[index].amount),
+      BigInt(collaterallInOrders[index].amount),
       mcr,
       decimals
     );
@@ -147,7 +147,7 @@ export const getUserPositions = async (
       liquidationPrice,
       collateralPrice,
       config?.cauldronSettings.healthMultiplier,
-      Number(userPosition.borrowValue),
+      Number(userPosition.borrow.amount),
       leftToDrop
     );
 
@@ -161,7 +161,7 @@ export const getUserPositions = async (
       userPosition.collateral.amount
     ).add(BigNumber.from(collaterallInOrders[index].amount));
 
-    const userBorrowAmount = BigNumber.from(userPosition.borrowValue);
+    const userBorrowAmount = BigNumber.from(userPosition.borrow.amount);
 
     const collateralDeposited = Number(
       utils.formatUnits(userCollateralAmount, config?.collateralInfo.decimals)
@@ -199,7 +199,7 @@ export const getUserPositions = async (
         },
         borrowInfo: {
           userBorrowPart,
-          userBorrowAmount: userPosition.borrowValue,
+          userBorrowAmount: userPosition.borrow.amount,
         },
         liquidationPrice: bigintLiquidationPrice,
         oracleRate: oracleExchangeRate,

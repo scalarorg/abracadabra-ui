@@ -4,11 +4,12 @@ import cauldronV4 from "@/abis/borrowPoolsAbi/CauldronV4";
 import sBTC from "@/abis/tokensAbi/sBTC";
 
 import type { CauldronConfig } from "@/configs/cauldrons/configTypes";
+
 const mimInfo = {
     name: "sUSD",
     icon: useImage(`assets/images/tokens/MIM.png`),
     decimals: 18,
-    address: "0xB5065Df90c390a7c5318f822b0Fa96Cde2f33051",
+    address: "0xcA3d89CaEb9d8dDC1cd96281e7312410788142aa",
     abi: sUSD,
 };
 

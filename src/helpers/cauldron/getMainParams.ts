@@ -1,28 +1,33 @@
 import { BigNumber } from "ethers";
 import type { Address } from "viem";
-import lensAbi from "@/abis/marketLens.js";
-import myLensAbi from "@/abis/scalarMarketLens.js";
+import lensAbi from "@/abis/marketLens";
 import type { MainParams } from "@/helpers/cauldron/types";
 import { getPublicClient } from "@/helpers/chains/getChainsInfo";
 import { getLensAddress } from "@/helpers/cauldron/getLensAddress";
 import type { CauldronConfig } from "@/configs/cauldrons/configTypes";
 
+
 interface MarketInfoResponse {
   result: {
-    borrowFee: bigint;
-    cauldron: Address;
-    collateralPrice: bigint;
-    interestPerYear: bigint;
-    liquidationFee: bigint;
-    marketMaxBorrow: bigint;
-    maximumCollateralRatio: bigint;
-    oracleExchangeRate: bigint;
-    totalBorrowed: bigint;
+    cauldron: Address,
+    borrowFee: bigint,
+    maximumCollateralRatio: bigint,
+    liquidationFee: bigint,
+    interestPerYear: bigint,
+    marketMaxBorrow: bigint,
+    userMaxBorrow: bigint,
+    totalBorrow: {
+      part: bigint,
+      amount: bigint,
+    },
+    oracleExchangeRate: bigint,
+    collateralPrice: bigint,
     totalCollateral: {
-      amount: bigint;
-      value: bigint;
-    };
-    userMaxBorrow: bigint;
+      token: Address,
+      amount: bigint,
+      share: bigint,
+      value: bigint,
+    },
   };
   status: string;
 }
@@ -45,9 +50,10 @@ export const getMainParams = async (
       config.version === 2
         ? "getMarketInfoCauldronV2"
         : "getMarketInfoCauldronV3";
+
     return {
       address: lensAddress,
-      abi: chainId === 11155111 ? myLensAbi : lensAbi,
+      abi: lensAbi,
       functionName: methodName,
       args: [config.contract.address],
     };
@@ -55,6 +61,7 @@ export const getMainParams = async (
   const marketInfo: MarketInfoResponse[] = await publicClient.multicall({
     contracts,
   });
+
   const contractExchangeRate: bigint | null = cauldron
     ? await publicClient.readContract({
       ...cauldron,
@@ -67,6 +74,7 @@ export const getMainParams = async (
     .map(({ result, status }: MarketInfoResponse, index: number) => {
       // console.log(`📈 Processing result for index ${index}:`, status);
       //TODO: remove constant market info
+
       if (status === "failure") {
         result = {
           borrowFee: BigInt(0),
@@ -77,9 +85,14 @@ export const getMainParams = async (
           marketMaxBorrow: BigInt(0),
           maximumCollateralRatio: BigInt(0),
           oracleExchangeRate: BigInt(0),
-          totalBorrowed: BigInt(0),
-          totalCollateral: {
+          totalBorrow: {
+            part: BigInt(0),
             amount: BigInt(0),
+          },
+          totalCollateral: {
+            token: "0x0000000000000000000000000000000000000000" as Address,
+            amount: BigInt(0),
+            share: BigInt(0),
             value: BigInt(0),
           },
           userMaxBorrow: BigInt(0),
@@ -104,7 +117,7 @@ export const getMainParams = async (
         mimLeftToBorrow: BigNumber.from(result.marketMaxBorrow),
         maximumCollateralRatio: BigNumber.from(result.maximumCollateralRatio),
         oracleExchangeRate: BigNumber.from(result.oracleExchangeRate),
-        totalBorrowed: BigNumber.from(result.totalBorrowed),
+        totalBorrowed: BigNumber.from(result.totalBorrow.amount),
         tvl: BigNumber.from(result.totalCollateral.value),
         userMaxBorrow: BigNumber.from(result.userMaxBorrow),
         updatePrice,
@@ -113,7 +126,7 @@ export const getMainParams = async (
           mimLeftToBorrow: result.marketMaxBorrow,
           maximumCollateralRatio: result.maximumCollateralRatio,
           oracleExchangeRate: result.oracleExchangeRate,
-          totalBorrowed: result.totalBorrowed,
+          totalBorrowed: result.totalBorrow.amount,
           tvl: result.totalCollateral.value,
           userMaxBorrow: result.userMaxBorrow,
         },

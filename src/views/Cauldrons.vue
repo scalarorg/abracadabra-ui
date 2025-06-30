@@ -166,6 +166,8 @@ export default {
     async createCaulldronsInfo(): Promise<void> {
       const cauldrons = await getMarketList(this.account);
 
+      console.log("cauldrons", cauldrons);
+
       this.cauldrons = await this.getCollateralsApr(cauldrons);
 
       this.cauldronsLoading = false;
