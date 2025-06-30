@@ -102,4 +102,4 @@ export default [
     name: "zeroXExchangeProxy",
     inputs: [],
   },
-];
+] as const;
