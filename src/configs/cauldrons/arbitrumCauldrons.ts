@@ -1,5 +1,5 @@
-import poolsAbi from "@/abis/borrowPoolsAbi/index";
-import tokensAbi from "@/abis/tokensAbi/index";
+import poolsAbi from "@/abis/borrowPoolsAbi";
+import tokensAbi from "@/abis/tokensAbi";
 import degenBoxERC20VaultWrapper from "@/abis/lp/degenBoxERC20VaultWrapper";
 import degenBoxERC4626Wrapper from "@/abis/lp/DegenBoxERC4626Wrapper";
 import magicGlpLevSwapperAbi from "@/abis/lp/MagicGlpLevSwapper";

@@ -305,8 +305,8 @@ export default {
 
       return encodeFunctionData({
         abi: BlastMIMSwapRouterAbi,
-        functionName: methodName,
-        args: config.args,
+        functionName: methodName as any,
+        args: config.args as any,
       });
     },
   },
