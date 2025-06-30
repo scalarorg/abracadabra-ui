@@ -1746,4 +1746,4 @@ export default [
     stateMutability: "pure",
     type: "function",
   },
-];
+] as const;
