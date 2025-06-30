@@ -8,18 +8,17 @@ import kavaCauldrons from "@/configs/cauldrons/kavaCauldrons";
 //ALl beraBartio rpc endpoints  are not working
 //import beraBartioCauldrons from "@/configs/cauldrons/beraBartioCauldrons";
 import blastCauldrons from "@/configs/cauldrons/blastCauldrons";
-import scalarCauldrons from "@/configs/cauldrons/scalarCauldrons";
-// export default [
-//   ...ethereumCauldrons,
-//   ...fantomCauldrons,
-//   ...avalancheCauldrons,
-//   ...arbitrumCauldrons,
-//   ...bscCauldrons,
-//   ...optimismCauldrons,
-//   ...kavaCauldrons,
-//   //...beraBartioCauldrons,
-//   ...blastCauldrons,
-//   ...scalarCauldrons,
-// ];
+import sepoliaCauldrons from "@/configs/cauldrons/sepoliaCauldrons";
 
-export default scalarCauldrons
+export default [
+  ...ethereumCauldrons,
+  // ...fantomCauldrons,
+  ...avalancheCauldrons,
+  ...arbitrumCauldrons,
+  ...bscCauldrons,
+  ...optimismCauldrons,
+  ...kavaCauldrons,
+  // ...beraBartioCauldrons,
+  ...blastCauldrons,
+  ...sepoliaCauldrons,
+];

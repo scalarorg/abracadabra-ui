@@ -1,4 +1,4 @@
-import abi from "@/abis/beam";
+import transparentUpgradeableProxy from "@/abis/beam/transparentUpgradeableProxy";
 import type { BeamConfigV2 } from "@/helpers/beam/types";
 import { getChainIcon } from "@/helpers/chains/getChainIcon";
 
@@ -9,7 +9,7 @@ export const spellConfigs: BeamConfigV2[] = [
     chainName: "Ethereum",
     contract: {
       address: "0x48c95D958fd0Ef6ecF7fEb8d592c4D5a70f1AfBE",
-      abi: abi.transparentUpgradeableProxy,
+      abi: transparentUpgradeableProxy,
     },
     outboundProofType: 2,
     executor: "0x173272739Bd7Aa6e4e214714048a9fE699453059",
@@ -37,7 +37,7 @@ export const spellConfigs: BeamConfigV2[] = [
   //   chainName: "Arbitrum",
   //   contract: {
   //     address: "0x5b80901Ff867E541465057cB37dE6b8c6E5FB133",
-  //     abi: abi.LzIndirectOFTV2,
+  //     abi: LzIndirectOFTV2,
   //   },
   //   outboundProofType: 2,
   //   executor: "0x31CAe3B7fB82d847621859fb1585353c5720660D",
@@ -66,7 +66,7 @@ export const spellConfigs: BeamConfigV2[] = [
     chainName: "Berachain",
     contract: {
       address: "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA",
-      abi: abi.transparentUpgradeableProxy,
+      abi: transparentUpgradeableProxy,
     },
     outboundProofType: 2,
     executor: "0x4208D6E27538189bB48E603D6123A94b8Abe0A0b",

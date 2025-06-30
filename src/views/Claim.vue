@@ -151,7 +151,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import degenBoxAbi from "@/abis/degenBox.js";
+import degenBoxAbi from "@/abis/degenBox";
 import BaseButton from "@/components/base/BaseButton.vue";
 import { tokensChainLink } from "@/configs/chainLink/config";
 import NetworksList from "@/components/ui/NetworksList.vue";
