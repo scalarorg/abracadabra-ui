@@ -129,7 +129,7 @@ const bentoDeposit = (cookData, token, to, amount, share, value = 0) => {
   );
 
   cookData.events.push(methodId);
-  cookData.values.push(value);
+  cookData.values.push(typeof value === "number" ? value : Number(value));
   cookData.datas.push(encode);
 
   return cookData;

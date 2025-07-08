@@ -148,6 +148,8 @@ export default {
           this.action
         );
 
+        console.log({cookPayload})
+
         // GM CATCH
         const isGM = this.cauldron.config.cauldronSettings.isGMXMarket;
         if (cookActionType === ACTION_TYPES.ACTION_LEVERAGE && isGM) {

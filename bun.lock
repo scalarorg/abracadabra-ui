@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "abracadabra.money",
+      "name": "scalarorg.money",
       "dependencies": {
         "@apollo/client": "^3.8.7",
         "@coinbase/wallet-sdk": "^3.6.5",

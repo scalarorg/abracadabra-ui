@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const RESTRICTED_COUNTRIES = [
-  "United States",
   "Myanmar [Burma]",
   "Ivory Coast",
   "Cuba",
