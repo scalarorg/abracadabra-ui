@@ -1,8 +1,8 @@
 import type { AddressCollection } from "./types";
 
 export default {
-    market: "0xc9D292715c40a6323162AF23b8739ffaa09bBF02",
-    stablecoin: "0xBE01174440a44A3460Eb96000869265Ed4f13923",
-    erc20: "0x879532D388871F37DAbaea57C61ebceADe51A24E",
-    lens: "0xf094857184cd16A8Bce3a7106f8cFfcB86275416"
+    market: "0xcE13BFeF6055e4Ef919211702825BBB338284758",
+    stablecoin: "0xb1E67b3E60D2CA2A977bF28f75F8Aec146a52d14",
+    erc20: "0x2FBDe7289F6957E029bAF4638c01Df15fe024431",
+    lens: "0xB60ef536526135722B85aA4Cd6CCc5Ad1BdC48DF"
 } as AddressCollection;
