@@ -22,7 +22,7 @@ const recipeRepay = async (
       to,
       part,
       "0",
-      "0",
+      0,
       false,
       false,
       2
@@ -50,7 +50,7 @@ const recipeRepay = async (
     to,
     "0",
     "-1",
-    "0",
+    0,
     true,
     false,
     0
