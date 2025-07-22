@@ -25,7 +25,7 @@
         <div class="borrow-head">
           <div class="borrow-head-row">
             <h3 class="title-wrap">
-              <span> Mint Scalar Coin</span>
+              <span> Mint sUSD</span>
               <SlippagePopup
                 v-if="actionConfig.useLeverage"
                 :amount="actionConfig.amounts.slippage"
@@ -42,7 +42,7 @@
           </div>
 
           <h4 class="subtitle">
-            Select the amount of Scalar Coin to borrow from the Cauldron
+            Select the amount of Scalar USD to borrow from the Cauldron
           </h4>
         </div>
 

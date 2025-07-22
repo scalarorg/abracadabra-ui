@@ -3,17 +3,18 @@
     <div class="banner-container">
       <div class="cauldrons-container">
         <div class="text-wrap">
-          <h3 class="title">Available Cauldrons</h3>
+          <h3 class="title">Available Vaults</h3>
           <h4 class="subtitle">
             Use your favourite assets as collateral to mint
           </h4>
           <h4 class="subtitle">
             <img
               class="mim-icon"
-              src="@/assets/images/PixelMIM.svg"
+              src="@/assets/images/PixelScalar.svg"
               alt="sUSD icon"
             />
-            sUSD a leading decentralised and collateral-backed stablecoin.
+            Scalar USD a leading decentralised and collateral-backed
+            stablecoin.
           </h4>
         </div>
 

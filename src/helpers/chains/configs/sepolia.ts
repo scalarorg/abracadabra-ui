@@ -1,8 +1,12 @@
 import { sepolia } from "@wagmi/core/chains";
 import { useImage } from "@/helpers/useImage";
-import { getRpcListByChainId } from "@/helpers/chains/utils";
+import { filterRpcUrls } from "@/helpers/chains/utils";
 import { initPublicClient } from "@/helpers/chains/initPublicClient";
-const rpcList = getRpcListByChainId(sepolia.id);
+import { initStaticJsonRpcProvider } from "@/helpers/connect/initStaticJsonRpcProvider";
+
+const rpcList = filterRpcUrls([
+    "https://eth-sepolia.g.alchemy.com/v2/nNbspp-yjKP9GtAcdKi8xcLnBTptR2Zx",
+]);
 
 const viemConfig = {
     ...sepolia,
@@ -24,9 +28,9 @@ export const sepoliaConfig = {
     chainId: sepolia.id,
     chainName: "Sepolia",
     symbol: "ETH",
-    icon: useImage("assets/images/networks/ethereum-icon.svg"),
+    icon: useImage("assets/images/networks/sepolia.png"),
     baseTokenIcon: useImage("assets/images/tokens/ETH.png"),
     baseTokenSymbol: "ETH",
-    networkIcon: useImage(`assets/images/networks/ethereum.svg`),
+    networkIcon: useImage(`assets/images/networks/sepolia.png`),
     lzChainId: 161,
 };
