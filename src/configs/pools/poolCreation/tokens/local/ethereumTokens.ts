@@ -9,7 +9,7 @@ const ethereumTokens: Array<PoolCreationTokenConfig> = [
     chainId: MAINNET_CHAIN_ID,
     address: "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3",
     name: "Magic Internet Money",
-    symbol: "MIM",
+    symbol: "sUSD",
     icon: useImage(`assets/images/tokens/MIM.png`),
     decimals: 18,
     abi: erc20Abi,

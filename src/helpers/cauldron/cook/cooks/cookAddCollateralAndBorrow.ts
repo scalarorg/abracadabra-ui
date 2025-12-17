@@ -1,5 +1,5 @@
 import { actions } from "@/helpers/cauldron/cook/actions";
-import { cook, cookViem } from "@/helpers/cauldron/cauldron";
+import { cookViem } from "@/helpers/cauldron/cauldron";
 import checkAndSetMcApprove from "@/helpers/cauldron/cook/checkAndSetMcApprove";
 import recipeApproveMC from "@/helpers/cauldron/cook/recipies/recipeApproveMC";
 
@@ -43,6 +43,8 @@ const cookAddCollateralAndBorrow = async (
     cauldronObject,
     isMasterContractApproved
   );
+
+  console.log("cookData", cookData);
 
   if (updatePrice) cookData = await actions.updateExchangeRate(cookData, true);
 

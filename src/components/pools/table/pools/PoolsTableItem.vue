@@ -187,7 +187,7 @@ export default {
 }
 
 .open {
-  background: url("@/assets/images/cauldrons/table-item-background.png");
+  background: #fff;
 }
 
 .label {
@@ -229,6 +229,7 @@ export default {
 
 .token-icons {
   display: flex;
+  gap: 20px;
   align-items: center;
 }
 

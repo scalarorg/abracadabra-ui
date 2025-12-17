@@ -9,7 +9,7 @@ const kavaTokens: Array<PoolCreationTokenConfig> = [
     chainId: KAVA_CHAIN_ID,
     address: "0x471EE749bA270eb4c1165B5AD95E614947f6fCeb",
     name: "Magic Internet Money",
-    symbol: "MIM",
+    symbol: "sUSD",
     icon: useImage(`assets/images/tokens/MIM.png`),
     decimals: 18,
     abi: erc20Abi,

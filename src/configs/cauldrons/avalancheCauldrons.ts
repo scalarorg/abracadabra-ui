@@ -7,7 +7,7 @@ import { useImage } from "@/helpers/useImage";
 import type { CauldronConfig } from "@/configs/cauldrons/configTypes";
 
 const mimInfo = {
-  name: "MIM",
+  name: "sUSD",
   icon: useImage(`assets/images/tokens/MIM.png`),
   decimals: 18,
   address: "0x130966628846BFd36ff31a822705796e8cb8C18D",

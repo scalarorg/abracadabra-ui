@@ -98,7 +98,7 @@ export default {
     return {
       actionTabs: ["Stake", "Withdraw"] as string[],
       activeToken: "USDb" as string,
-      tokensList: ["USDb", "MIM"] as string[],
+      tokensList: ["USDb", "sUSD"] as string[],
       isLock: false as boolean,
       isWithdrawLock: false as boolean,
       isWithdrawPopup: false as boolean,

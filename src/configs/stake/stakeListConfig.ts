@@ -50,7 +50,7 @@ export const stakeListConfig: StakeListItemConfig[] = [
     rewardTokens: [
       {
         name: "Magic Internet Money",
-        symbol: "MIM",
+        symbol: "sUSD",
         icon: useImage("assets/images/tokens/MIM.png"),
       },
     ],

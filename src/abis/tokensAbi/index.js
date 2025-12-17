@@ -56,6 +56,10 @@ import ZRO from "@/abis/tokensAbi/ZRO";
 import ENA from "@/abis/tokensAbi/ENA";
 import bSPELL from "@/abis/tokensAbi/bSPELL";
 
+import sETH from "@/abis/tokensAbi/wETH";
+import sUSD from "@/abis/tokensAbi/sUSD";
+import sBTC from "@/abis/tokensAbi/sBTC";
+
 export default {
   ALCX,
   MIM,
@@ -114,4 +118,7 @@ export default {
   ZRO,
   ENA,
   bSPELL,
+  sETH,
+  sUSD,
+  sBTC,
 };

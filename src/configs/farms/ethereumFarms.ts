@@ -63,7 +63,7 @@ const ethereumFarms: FarmConfig[] = [
     },
     depositedBalance: {
       token0: {
-        name: "MIM",
+        name: "sUSD",
         icon: useImage("assets/images/tokens/MIM.png"),
       },
       token1: {

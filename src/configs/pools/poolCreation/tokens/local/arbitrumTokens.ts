@@ -9,7 +9,7 @@ const arbitrumTokens: Array<PoolCreationTokenConfig> = [
     chainId: ARBITRUM_CHAIN_ID,
     address: "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A",
     name: "Magic Internet Money",
-    symbol: "MIM",
+    symbol: "sUSD",
     icon: useImage(`assets/images/tokens/MIM.png`),
     decimals: 18,
     abi: erc20Abi,

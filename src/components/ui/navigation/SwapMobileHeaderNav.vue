@@ -4,7 +4,7 @@
       <li @click="$emit('close-popup')">
         <MobileHeaderLink to="MimSwap">
           <img src="@/assets/images/header/dropdown/more/swap-icon.svg" />
-          MimSwap
+          sUSDSwap
         </MobileHeaderLink>
       </li>
 

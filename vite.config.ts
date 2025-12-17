@@ -3,20 +3,20 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
-import devNodePolyfills from "vite-plugin-node-polyfills";
+import { nodePolyfills as devNodePolyfills } from "vite-plugin-node-polyfills";
 import nodePolyfills from "rollup-plugin-polyfill-node";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    devNodePolyfills.nodePolyfills({
+    devNodePolyfills({
       // Whether to polyfill `node:` protocol imports.
       protocolImports: true,
     }),
     vue(),
   ],
   esbuild: {
-    drop: ["console", "debugger"], // warn: to comment in dev mode to show logs in .ts files
+    // drop: ["console", "debugger"], // warn: to comment in dev mode to show logs in .ts files
   },
   build: {
     target: "esnext",

@@ -122,4 +122,4 @@ export default [
     name: "vault",
     inputs: [],
   },
-];
+] as const;

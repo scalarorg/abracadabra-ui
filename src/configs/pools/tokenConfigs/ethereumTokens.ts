@@ -2,7 +2,7 @@ import { useImage } from "@/helpers/useImage";
 
 export const ethereumTokens = [
   {
-    name: "MIM",
+    name: "sUSD",
     chainId: 1,
     address: "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3",
     icon: useImage("assets/images/tokens/MIM.png"),

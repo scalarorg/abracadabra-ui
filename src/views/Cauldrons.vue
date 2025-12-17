@@ -3,23 +3,24 @@
     <div class="banner-container">
       <div class="cauldrons-container">
         <div class="text-wrap">
-          <h3 class="title">Available Cauldrons</h3>
+          <h3 class="title">Available Vaults</h3>
           <h4 class="subtitle">
             Use your favourite assets as collateral to mint
           </h4>
           <h4 class="subtitle">
             <img
               class="mim-icon"
-              src="@/assets/images/PixelMIM.svg"
-              alt="Mim icon"
+              src="@/assets/images/PixelScalar.svg"
+              alt="sUSD icon"
             />
-            MIM a leading decentralised and collateral-backed stablecoin.
+            Scalar USD a leading decentralised and collateral-backed
+            stablecoin.
           </h4>
         </div>
 
         <!-- <ArbitrumBlock /> -->
 
-        <CauldronsCarousel />
+        <!-- <CauldronsCarousel /> -->
 
         <CauldronsTable
           :cauldrons="cauldrons"
@@ -83,13 +84,13 @@ export default {
           isSortingCriterion: true,
         },
         {
-          tableKey: "TMB",
-          tooltip: "Total MIM Borrowed.",
+          tableKey: "Borrowed",
+          tooltip: "Total sUSD Borrowed.",
           isSortingCriterion: true,
         },
         {
-          tableKey: "MIMS LB",
-          tooltip: "MIMs left to be Borrowed.",
+          tableKey: "Left",
+          tooltip: "sUSDs left to be Borrowed.",
           isSortingCriterion: true,
         },
         {
@@ -165,6 +166,8 @@ export default {
 
     async createCaulldronsInfo(): Promise<void> {
       const cauldrons = await getMarketList(this.account);
+
+      console.log("cauldrons", cauldrons);
 
       this.cauldrons = await this.getCollateralsApr(cauldrons);
 

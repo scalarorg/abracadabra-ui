@@ -320,7 +320,7 @@ export default {
       return [
         {
           id: MIM_ID,
-          name: "MIM",
+          name: "sUSD",
           icon: useImage("assets/images/tokens/MIM.png"),
         },
         {

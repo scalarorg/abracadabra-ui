@@ -2,11 +2,10 @@
   <div class="borrow-form">
     <!-- TODO: MOVE TO MARKET -->
     <OrdersManager
-      v-if="cauldron && cauldron.config.cauldronSettings.isGMXMarket && account"
+      v-if="cauldron && cauldron.config.cauldronSettings.isGMXMarket"
       :cauldronObject="cauldron"
       :recoverLeverage="gmRecoverLeverageOrder"
       :deleverageFromOrder="gmDeleverageFromOrder"
-      :unfinishedLeverage="gmUnfinishedLeverage"
     />
 
     <div class="deposit-wrap">
@@ -26,7 +25,7 @@
         <div class="borrow-head">
           <div class="borrow-head-row">
             <h3 class="title-wrap">
-              <span> Mint MIM</span>
+              <span> Mint sUSD</span>
               <SlippagePopup
                 v-if="actionConfig.useLeverage"
                 :amount="actionConfig.amounts.slippage"
@@ -43,7 +42,7 @@
           </div>
 
           <h4 class="subtitle">
-            Select the amount of MIM to borrow from the Cauldron
+            Select the amount of Scalar USD to borrow from the Cauldron
           </h4>
         </div>
 
@@ -56,7 +55,6 @@
           :leverageAmounts="actionConfig.amounts.leverageAmounts"
           :cauldron="cauldron"
           @updateLeverageAmounts="onUpdateLeverageAmounts"
-          @updateMaxToBorrow="onUpdateMaxToBorrow"
         />
 
         <BorrowBlock
@@ -79,18 +77,6 @@
     </div>
   </div>
 
-  <LocalPopupWrap
-    :isOpened="isDeleverageInfoPopupOpened"
-    :isFarm="true"
-    @closePopup="isDeleverageInfoPopupOpened = false"
-  >
-    <NoDeleverageConfirmationPopup
-      :cauldron="cauldron"
-      :actionConfig="actionConfig"
-      @confirmAction="actionHandler"
-    />
-  </LocalPopupWrap>
-
   <!-- TODO: MOVE TO MARKET -->
   <template v-if="activeOrder && isOpenGMPopup">
     <GMStatus
@@ -110,10 +96,9 @@ import { defineAsyncComponent } from "vue";
 import type { DepositAmounts, SwapAmounts } from "@/helpers/cauldron/types";
 //@ts-ignore
 import tempMixin from "@/mixins/temp";
-import { mapGetters } from "vuex";
 
 export default {
-  emits: ["updateToggle", "updateAmounts", "onUpdateMaxToBorrow"],
+  emits: ["updateToggle", "updateAmounts"],
   mixins: [tempMixin],
   props: {
     cauldron: {
@@ -127,14 +112,9 @@ export default {
   data() {
     return {
       action: "borrow",
-      isDeleverageInfoPopupOpened: false,
     };
   },
   computed: {
-    ...mapGetters({
-      account: "getAccount",
-    }),
-
     isLeverageAllowed() {
       const { isSwappersActive } = this.cauldron.config.cauldronSettings;
 
@@ -170,10 +150,6 @@ export default {
     onUpdateSlippage(slippage: BigNumber) {
       this.$emit("updateAmounts", "slippage", slippage);
     },
-
-    onUpdateMaxToBorrow(maxToBorrow: BigNumber) {
-      this.$emit("onUpdateMaxToBorrow", maxToBorrow);
-    },
   },
 
   components: {
@@ -199,13 +175,6 @@ export default {
     GMStatus: defineAsyncComponent(
       //@ts-ignore
       () => import("@/components/popups/GMStatus.vue")
-    ),
-    LocalPopupWrap: defineAsyncComponent(
-      //@ts-ignore
-      () => import("@/components/popups/LocalPopupWrap.vue")
-    ),
-    NoDeleverageConfirmationPopup: defineAsyncComponent(
-      () => import("@/components/popups/NoDeleverageConfirmationPopup.vue")
     ),
   },
 };

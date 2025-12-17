@@ -2,7 +2,7 @@ import { useImage } from "@/helpers/useImage";
 
 export const kavaTokens = [
   {
-    name: "MIM",
+    name: "sUSD",
     chainId: 2222,
     address: "0x471EE749bA270eb4c1165B5AD95E614947f6fCeb",
     icon: useImage("assets/images/tokens/MIM.png"),

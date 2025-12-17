@@ -5,7 +5,7 @@
       @click="addToken"
       :class="{ disabled: !this.account }"
     >
-      <img src="@/assets/images/PixelMIM.svg" alt="MIM" />
+      <img src="@/assets/images/PixelScalar.svg" alt="sUSD" />
     </button>
     <p class="mim-price" v-if="mimPrice !== null">
       $ {{ formatToFixed(mimPrice, 4) }}

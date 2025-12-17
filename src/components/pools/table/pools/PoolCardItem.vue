@@ -208,7 +208,7 @@ export default {
 }
 
 .open {
-  background: url("@/assets/images/cauldrons/table-item-background.png");
+  background: #fff;
 }
 
 .row {

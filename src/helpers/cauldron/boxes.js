@@ -55,6 +55,7 @@ export const setMasterContractApproval = async (
   s = "0x0000000000000000000000000000000000000000000000000000000000000000"
 ) => {
   try {
+    console.log("setMasterContractApproval", user, masterContract, approved, v, r, s);
     const estimateGas = await contract.estimateGas.setMasterContractApproval(
       user,
       masterContract,

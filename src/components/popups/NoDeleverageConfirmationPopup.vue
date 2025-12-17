@@ -26,7 +26,7 @@
       <p class="repayment">
         You will need to repay
         <span class="mim-repay">
-          <BaseTokenIcon :icon="mimIcon" name="MIM" size="24px" />
+          <BaseTokenIcon :icon="mimIcon" name="sUSD" size="24px" />
           {{ formattedAmountToRepay }}
           MIM
         </span>

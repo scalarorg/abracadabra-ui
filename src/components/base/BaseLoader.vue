@@ -4,8 +4,7 @@
   </div>
 
   <div :class="['spinner', { small }, { medium }, { large }]" v-else>
-    <img src="@/assets/images/cauldrons/loader.gif" alt="Loader icon" />
-    <span class="spinner-text" v-if="text"> {{ text }}</span>
+      <!-- <img src="@/assets/images/PixelScalar.svg" alt="Loader icon" /> -->
   </div>
 </template>
 

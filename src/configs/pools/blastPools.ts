@@ -16,7 +16,7 @@ const blastPools: Array<PoolConfig | AdditionalPoolConfig> = [
       abi: BlastMagicLpAbi,
     },
     baseToken: {
-      name: "MIM",
+      name: "sUSD",
       icon: useImage(`assets/images/tokens/MIM.png`),
       decimals: 18,
       contract: {

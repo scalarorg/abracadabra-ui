@@ -11,7 +11,7 @@
 
     <div class="description">
       <p class="text">Delegate Your <span class="primary small">ARB</span></p>
-      <p class="text">to <span class="primary small">Abracadabra</span> DAO</p>
+      <p class="text">to <span class="primary small">Scalar</span> DAO</p>
     </div>
   </a>
 </template>

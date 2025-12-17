@@ -70,13 +70,14 @@ const recipeAddCollatral = async (
       token,
       cauldron.address,
       amount,
-      "0",
+      0,
       //@ts-ignore
       collateralValue,
       false,
       false,
       2
     );
+
   }
 
   cookData = await actions.addCollateral(cookData, "-2", to, true);

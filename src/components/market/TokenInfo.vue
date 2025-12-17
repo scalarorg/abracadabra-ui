@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import { formatUnits, parseUnits } from "viem";
+import { formatEther, formatUnits, parseUnits } from "viem";
 import { getChainIcon } from "@/helpers/chains/getChainIcon";
 import { ETHER_DECIMALS, ONE_ETHER_VIEM } from "@/constants/global";
 import { formatTokenBalance, formatToFixed } from "@/helpers/filters";
@@ -35,12 +35,10 @@ export default {
   computed: {
     collateralToUsd() {
       const { decimals } = this.cauldron.config.collateralInfo;
-      const { oracleExchangeRate } = this.cauldron.mainParams.alternativeData;
+      let { oracleExchangeRate } = this.cauldron.mainParams.alternativeData;
       const expandDecimals = parseUnits("1", decimals);
-      const tokenToMim = (ONE_ETHER_VIEM * expandDecimals) / oracleExchangeRate;
-
-      const tokenPrice = Number(formatUnits(tokenToMim, ETHER_DECIMALS));
-
+      const tokenToUsd = (ONE_ETHER_VIEM * expandDecimals) / oracleExchangeRate;
+      const tokenPrice = Number(formatUnits(tokenToUsd, ETHER_DECIMALS));
       const numbersAfterComa =
         tokenPrice > 0.01 ? 2 : tokenPrice < 0.0001 ? 6 : 4;
       return formatTokenBalance(formatToFixed(tokenPrice, numbersAfterComa));

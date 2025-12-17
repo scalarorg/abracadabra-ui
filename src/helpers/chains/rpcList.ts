@@ -8,7 +8,7 @@ import { OPTIMISM_CHAIN_ID, POLIGON_CHAIN_ID } from "@/constants/global";
 import { BASE_CHAIN_ID, BERA_BARTIO_CHAIN_ID } from "@/constants/global";
 import { MAINNET_CHAIN_ID, MOONRIVER_CHAIN_ID } from "@/constants/global";
 import { ARBITRUM_CHAIN_ID, AVALANCHE_CHAIN_ID } from "@/constants/global";
-import { NIBIRU_CHAIN_ID } from "@/constants/global";
+import { NIBIRU_CHAIN_ID, SEPOLIA_CHAIN_ID } from "@/constants/global";
 
 export const DEFAULT_BERA_RPC = "https://rpc.berachain.com";
 export const DEFAULT_BERA_BARTIO_RPC =
@@ -146,4 +146,11 @@ export const rpcList = {
     "https://linea.blockpi.network/v1/rpc/public",
   ],
   [NIBIRU_CHAIN_ID]: [DEFAULT_NIBIRU_RPC],
+  [SEPOLIA_CHAIN_ID]: [
+    "https://eth-sepolia.public.blastapi.io",
+    "https://rpc.sepolia.org",
+    "https://rpc2.sepolia.org",
+    "https://sepolia.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+    "https://eth-sepolia.g.alchemy.com/v2/demo",
+  ],
 };

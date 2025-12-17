@@ -38,7 +38,7 @@ export const bentoDepositEncodeHandler = async (
   to,
   amount,
   share,
-  value = "0",
+  value = 0,
   useValue1 = false,
   useValue2 = false,
   returnValues = 0

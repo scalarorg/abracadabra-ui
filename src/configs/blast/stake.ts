@@ -22,7 +22,7 @@ export const blastStakeConfig: BlastStakeConfig = {
       },
     },
     {
-      name: "MIM",
+      name: "sUSD",
       icon: useImage(`assets/images/tokens/MIM.png`),
       decimals: 18,
       contract: {

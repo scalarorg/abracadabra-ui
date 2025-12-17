@@ -182,7 +182,7 @@ export default {
   background-size: cover;
 
   &.accent {
-    background-image: url("@/assets/images/cauldrons/table-item-background.png");
+    background-image: #fff;
   }
 }
 
